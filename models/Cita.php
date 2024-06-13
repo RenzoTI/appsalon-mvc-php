@@ -5,7 +5,7 @@ namespace Model;
 class Cita extends ActiveRecord {
      // Base de datos
      protected static $tabla = 'citas';
-     protected static $columnasDB = ['id', 'fecha', 'hora', 'usuarioid'];
+     protected static $columnasDB = ['id', 'fecha', 'hora', 'usuarioId'];
  
      public $id;
      public $fecha;
@@ -17,7 +17,7 @@ class Cita extends ActiveRecord {
          $this->id = $args['id'] ?? null;
          $this->fecha = $args['fecha'] ?? '';
          $this->hora = $args['hora'] ?? '';
-         $this->usuarioid = $args['usuarioid'] ?? '';
+         $this->usuarioid = $args['usuarioId'] ?? '';
      }
 }
 
