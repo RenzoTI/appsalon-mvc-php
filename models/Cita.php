@@ -10,7 +10,7 @@ class Cita extends ActiveRecord {
      public $id;
      public $fecha;
      public $hora;
-     public $usuarioid;
+     public $usuarioId;
  
      public function __construct($args = [])
      {
